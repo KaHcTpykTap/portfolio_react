@@ -17,22 +17,22 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         emailjs
-          .sendForm(
-            "service_cbtpqyl",
-            "template_zeqmqff",
-            formRef.current,
-            "user_HHrcsuVixK4ydW596wiEp"
-          )
-          .then(
-            (result) => {
-              console.log(result.text);
-              setDone(true)
-            },
-            (error) => {
-              console.log(error.text);
-            }
-          );
-      };
+            .sendForm(
+                "service_cbtpqyl",
+                "template_zeqmqff",
+                formRef.current,
+                "user_HHrcsuVixK4ydW596wiEp"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    setDone(true)
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+    };
 
     return (
         <div className='c'>
@@ -64,7 +64,6 @@ const Contact = () => {
                                 className='c-icon'
                             />
                             Israel
-
                         </div>
                     </div>
                 </div>
@@ -77,7 +76,7 @@ const Contact = () => {
                         <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder="Name" name="user_name" />
                         <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder="Subject" name="user_subject" />
                         <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder="Email" name="user_email" />
-                        <textarea style={{ backgroundColor: darkMode && "#333" }} rows="5" placeholder="Message" name="message" />
+                        <textarea className='textarea' style={{ backgroundColor: darkMode && "#333" }} rows="5" placeholder="Message" name="message" />
                         <button>Submit</button>
                         {done && "Thank you..."}
                     </form>

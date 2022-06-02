@@ -2,6 +2,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    width: calc(100vw - 150px);
 }
 
 .a-left {
@@ -80,20 +81,18 @@
         text-align: center;
         margin-top: 50px;
     }
-
     .a-left {
         width: 100%;
     }
-
+    .a-sub {
+        margin: 2.4vh 0;
+    }
     .a-card {
         height: 30vh;
-
     }
-
     .a-card.bg .a-award {
         display: none;
     }
-
     .a-right {
         padding: 20px;
     }
