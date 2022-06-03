@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./toggleButton.css"
+import pdf_file from '../../pdf/002.pdf'
 
 const ToggleButton = () => {
 
@@ -7,6 +8,7 @@ const ToggleButton = () => {
 
     const changeToggle = () => {
         setActive(act => !act);
+        window.open(pdf_file)
     }
 
 
