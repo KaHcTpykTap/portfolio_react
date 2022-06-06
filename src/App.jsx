@@ -7,20 +7,22 @@ import SideRight from "./components/sideRight/SideRight";
 import Toggle from "./components/toggle/Toggle";
 import { ThemeContext } from "./context";
 import "./app.css"
+import TestComponent from "./components/testComponent/TestComponent";
 
 const App = () => {
 
-    const theme = useContext(ThemeContext);
-    const darkMode = theme.state.darkMode;
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="app">
       <SideLeft />
       <div className="main">
-        <Intro/>
-        <About/>
-        <Contact/>
+        <Intro />
+        <About />
+        <Contact />
       </div>
       <SideRight />
+      {/* <TestComponent/> */}
     </div>
   );
 };

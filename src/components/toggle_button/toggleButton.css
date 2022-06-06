@@ -1,8 +1,8 @@
 
 .tb {
-    position: absolute;
-    top: 5px;
-    left: 5px;
+    position: relative;
+/*     top: 5px;
+    left: 5px; */
     width: 70px;
     height: 70px;
     /* background: #222; */

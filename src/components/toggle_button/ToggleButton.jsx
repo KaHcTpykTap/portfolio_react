@@ -7,8 +7,8 @@ const ToggleButton = () => {
     const [active, setActive] = useState(true);
 
     const changeToggle = () => {
-        setActive(act => !act);
-        window.open(pdf_file)
+        /* active && window.open(pdf_file) */
+        setActive(act => !act); 
     }
 
 
