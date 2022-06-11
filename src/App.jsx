@@ -6,8 +6,10 @@ import SideLeft from "./components/sideLeft/SideLeft";
 import SideRight from "./components/sideRight/SideRight";
 import Toggle from "./components/toggle/Toggle";
 import { ThemeContext } from "./context";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./app.css"
 import TestComponent from "./components/testComponent/TestComponent";
+import MenuBar from "./components/menuBar/MenuBar";
 
 const App = () => {
 
@@ -15,13 +17,14 @@ const App = () => {
   const darkMode = theme.state.darkMode;
   return (
     <div className="app">
-      <SideLeft />
+      <MenuBar/>
+{/*       <SideLeft />
       <div className="main">
         <Intro />
         <About />
         <Contact />
       </div>
-      <SideRight />
+      <SideRight /> */}
       {/* <TestComponent/> */}
     </div>
   );
