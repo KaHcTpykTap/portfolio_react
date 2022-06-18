@@ -10,22 +10,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./app.css"
 import TestComponent from "./components/testComponent/TestComponent";
 import MenuBar from "./components/menuBar/MenuBar";
+import ButtonLogin from "./components/buttons/ButtonLogin";
 
 const App = () => {
+
+  const userName = "סויון";
 
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
     <div className="app">
-      <MenuBar/>
-{/*       <SideLeft />
+      <ButtonLogin name={userName}/>
+      {/* <MenuBar/>
+      <SideLeft />
       <div className="main">
         <Intro />
         <About />
         <Contact />
       </div>
-      <SideRight /> */}
-      {/* <TestComponent/> */}
+      <SideRight />
+      <TestComponent/> */}
     </div>
   );
 };
