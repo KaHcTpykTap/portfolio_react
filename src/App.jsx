@@ -20,8 +20,8 @@ const App = () => {
   const darkMode = theme.state.darkMode;
   return (
     <div className="app">
-      <ButtonLogin name={userName}/>
-      {/* <MenuBar/>
+     {/*  <ButtonLogin name={userName}/> */}
+      <MenuBar/>
       <SideLeft />
       <div className="main">
         <Intro />
@@ -29,7 +29,7 @@ const App = () => {
         <Contact />
       </div>
       <SideRight />
-      <TestComponent/> */}
+      <TestComponent/>
     </div>
   );
 };
